@@ -9,7 +9,7 @@
 $aujourdhui = new DateTime('today');
 $fin = new DateTime('2027-01-31');
 $diff = $aujourdhui->diff($fin);
-echo '<p>Il reste ' . $diff->days . ' jours avant la fin du semestre (31/01/2027).</p>';
+echo '<p>Il reste ' . $diff->format("%a") . ' jours avant la fin du semestre (31/01/2027).</p>';
 ?>
 <form method="post">
   <p>Vérifier une date : jour <input type="text" name="jour" size="3">
